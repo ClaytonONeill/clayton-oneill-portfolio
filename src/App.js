@@ -78,6 +78,7 @@ class App extends Component {
         <Header
           handleView={this.handleView}
         />
+        <div className='app-contain-all'>
         {
         this.state.view.page === 'projects' ?
         this.state.projects.map((projects) =>  (
@@ -85,9 +86,11 @@ class App extends Component {
           key={projects.id}
           projects={projects}
           />
-        )) : this.state.view.page === 'about' ? <About />
+        ))
+        : this.state.view.page === 'about' ? <About />
         : <Home />
       }
+      </div>
       </React.Fragment>
     )
   }
