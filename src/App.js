@@ -1,5 +1,4 @@
 // IMPORTS
-
 import React, {Component} from 'react';
 import './App.css';
 import Project from './component/Project.jsx';
@@ -45,7 +44,7 @@ class App extends Component {
         description: 'This was an application idea I\'ve had for a while, and this was a super fun one to build. I utilized Create-React-App, PHP to store uploaded user data, as well as a Third Party API to render the game board with dog names. Implementing game logic to this project was a blast, as well as doing the full design.'
       }
     ]
-  }
+  };
 
   handleView = (view) =>  {
     let pageTitle = '';
