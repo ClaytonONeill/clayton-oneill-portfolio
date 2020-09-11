@@ -14,7 +14,7 @@ body {
   padding: 1em;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: right;
   background: black;
 }
 
@@ -51,7 +51,6 @@ body {
   margin: .2em 0 0 2em;
 }
 
-
 /* APP MAIN STYLE */
 
 .app-contain-all {
@@ -65,16 +64,23 @@ body {
 .home-main-contain {
   margin: 3em auto;
   padding: 25px;
-  max-width: 70em;
   color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .welcome {
+  border-right: 1px solid lightgrey;
   background: white;
-  border-radius: 5px;
-  margin: 0 auto;
-  padding: 10px;
-  border: 1px solid red;
+  padding: 20px;
+  max-width: 20em;
+  line-height: 12em;
+  margin-right: 2em;
+}
+
+.welcome h4, h5 {
+  margin-top: 3em;
 }
 
 /* HOME PICTURES STYLE */
@@ -84,12 +90,20 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  padding: 10px;
+  margin-left: 1em;
+}
+
+.home-picture-contain {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 20px;
+  max-width: 45em;
 }
 
 .project-picture {
-  height: 15em;
-  width: 20em;
+  height: 10em;
+  width: 15em;
   margin: 2em auto;
   padding: 0;
   border-radius: 5px;
@@ -97,10 +111,11 @@ body {
 }
 
 .project-picture:hover {
-  box-shadow: -1px 1px 4px black;
+  box-shadow: -1px 1px 4px lightblue;
   transform: scale(1.01);
   cursor: pointer;
 }
+
 
 
 /* PROJECT STYLE */
@@ -154,12 +169,13 @@ body {
 
 .about-me {
   padding: 10px;
-  color: white;
+  color: black;
 }
 
 #about-me-title {
   text-decoration: underline;
 }
+
 
 
 /* MOBILE STLYE */

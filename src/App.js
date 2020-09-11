@@ -6,7 +6,6 @@ import Project from './component/Project.jsx';
 import Header from './component/Header.jsx';
 import About from './component/About.jsx';
 import Home from './component/Home.jsx';
-import Footer from './component/Footer.jsx';
 
 class App extends Component {
   state = {
@@ -80,7 +79,6 @@ class App extends Component {
             : <Home />
           }
           </div>
-        <Footer />
       </React.Fragment>
     )
   }
