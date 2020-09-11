@@ -6,6 +6,7 @@ import Project from './component/Project.jsx';
 import Header from './component/Header.jsx';
 import About from './component/About.jsx';
 import Home from './component/Home.jsx';
+import Footer from './component/Footer.jsx';
 
 class App extends Component {
   state = {
@@ -15,30 +16,28 @@ class App extends Component {
     },
     projects: [
       {
+        id: 1,
         title: 'Drink Finder App',
         image: '../pictures/Drink-Finder.png',
         link: 'https://claytononeill.github.io/Drink-Finder-App/',
         description: 'The user can input full names or search based on the first letter of a cocktail and the application returns ingredients and recipes for each cocktail! I used HTML, CSS, Javascript and jQuery to create a responsive design thats easy to interface with. I used this API "https://www.thecocktaildb.com".'
       },
       {
+        id: 2,
         title: 'The Beer Cellar',
         image: '../pictures/Beer-Cellar.png',
         link: 'https://morning-journey-64624.herokuapp.com/',
         description: 'An application for users to upload and describe new beers that they have tried. Users can log in and see what new brews their friends have been drinking. This application was my first full stack build using Node.js, Mongoose, Express, and EJS. It adheres to to the MVC structure and has full CRUD capacity. As well as user authentication with log-in & sign-up.'
       },
       {
+        id: 3,
         title: 'Trippr',
         image: '../pictures/Trippr.png',
         link: 'https://tripprga.herokuapp.com',
         description: 'This was the first group build that I worked on. A blog site about travel locations, what they were like, and the ability to like others posts. Another Full Stack build that utilized the MEAN Stack, user authentication and password encryption using Bcrypt. Our group managed the project duties with Trello, and held stand meetings every morning and afternoon.'
       },
       {
-        title: 'The Quiz App',
-        image: '../pictures/The-Quiz-App.png',
-        link: 'https://peaceful-dawn-12551.herokuapp.com/',
-        description: 'This was another group built application that allows users to create and take quizzes that other users have designed. Our group put a lot of time into the quiz design and making it a fluent and easy to understand interface. This was built with a PHP backend linked to a Create-React-App front end.'
-      },
-      {
+        id: 4,
         title: 'Dog Bingo',
         image: '../pictures/Dog-Bingo.png',
         link: 'https://stark-hollows-15427.herokuapp.com/',
@@ -54,12 +53,9 @@ class App extends Component {
         case 'home' :
           pageTitle = 'Home Page'
           break
-        case 'projects' :
-            pageTitle = 'Projects'
-            break
         case 'about' :
-            pageTitle = 'About this site'
-           break
+            pageTitle = 'About Me'
+            break
         default:
            break
       }
@@ -78,19 +74,13 @@ class App extends Component {
         <Header
           handleView={this.handleView}
         />
-        <div className='app-contain-all'>
-        {
-        this.state.view.page === 'projects' ?
-        this.state.projects.map((projects) =>  (
-          <Project
-          key={projects.id}
-          projects={projects}
-          />
-        ))
-        : this.state.view.page === 'about' ? <About />
-        : <Home />
-      }
-      </div>
+          <div className='app-contain-all'>
+          {
+            this.state.view.page === 'about' ? <About />
+            : <Home />
+          }
+          </div>
+        <Footer />
       </React.Fragment>
     )
   }

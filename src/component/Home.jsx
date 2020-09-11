@@ -7,18 +7,18 @@ class Home extends Component {
         <div className='home-main-contain'>
           <div className='welcome'>
             <h1>Welcome.</h1>
-            <h3>This is a portfolio website created by Clayton O'Neill.</h3>
+            <h3>This is the portfolio for Clayton O'Neill</h3>
+            <a href='../files/Clayton-Resume.pdf' download>Click here for a copy of my resume.</a>
           </div>
-          <div className='about-me'>
-            <image src='#' id='about-me-image'></image>
-            <h2 id='about-me-title'>About Me</h2>
-            <p>sdfjdfs ajsdfl asjklasdjfjlkasjf asldjfj fsa sdfjdfs
-            aksjdas lajdldj alksdj aljdlasdj aljsd
-            ajsd lajd asjdi dj ei awjdiawjj waahsdkja dkasd ahds
-            ashdjakdh iwhdahdkajsd
-            ahsdj
-            has djhasdwawdhw8
-            aidh awd</p>
+          <div className='home-pictures'>
+            <h2>Projects:</h2>
+            <img src='../pictures/Drink-Finder.png' className='project-picture'></img>
+            <img src='../pictures/Beer-Cellar.png'className='project-picture'></img>
+            <img src='../pictures/Trippr.png' className='project-picture'></img>
+            <img src='../pictures/Dog-Bingo.png' className='project-picture'></img>
+            <img src='../pictures/NASA-Project.png' className='project-picture'></img>
+          </div>
+          <div className='contact-information-main'>
           </div>
         </div>
       </React.Fragment>

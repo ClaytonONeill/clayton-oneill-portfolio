@@ -5,7 +5,6 @@
 
 
 body {
-  background: url('https://i.imgur.com/Qpmo3CP.jpg');
   background-size: auto;
 }
 
@@ -17,7 +16,6 @@ body {
   flex-direction: row;
   justify-content: center;
   background: black;
-  box-shadow: 2px 2px 10px black;
 }
 
 /* NAV STYLE */
@@ -29,7 +27,7 @@ body {
 .social-icon:hover {
   color: black;
   cursor: pointer;
-  transition: .2s;
+  transition: .1s;
   transform: scale(1.1);
 }
 
@@ -62,25 +60,48 @@ body {
   flex-wrap: wrap;
 }
 
-
 /* HOME STYLE */
 
 .home-main-contain {
-  border: .5px solid white;
-  margin: 5em auto;
+  margin: 3em auto;
   padding: 25px;
-  max-width: 40em;
-  color: white;
+  max-width: 70em;
+  color: black;
 }
 
 .welcome {
+  background: white;
+  border-radius: 5px;
   margin: 0 auto;
+  padding: 10px;
+  border: 1px solid red;
 }
 
-.about-me {
-  margin-top: 10em;
-  border: 1px solid white;
+/* HOME PICTURES STYLE */
+
+.home-pictures {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 10px;
 }
+
+.project-picture {
+  height: 15em;
+  width: 20em;
+  margin: 2em auto;
+  padding: 0;
+  border-radius: 5px;
+  transition: .3s;
+}
+
+.project-picture:hover {
+  box-shadow: -1px 1px 4px black;
+  transform: scale(1.01);
+  cursor: pointer;
+}
+
 
 /* PROJECT STYLE */
 
@@ -129,10 +150,16 @@ body {
 }
 
 
-
 /* ABOUT STYLE */
 
+.about-me {
+  padding: 10px;
+  color: white;
+}
 
+#about-me-title {
+  text-decoration: underline;
+}
 
 
 /* MOBILE STLYE */
