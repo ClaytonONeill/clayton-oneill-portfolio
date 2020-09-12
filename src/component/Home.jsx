@@ -17,10 +17,9 @@ class Home extends Component {
               {this.props.projects.map((projectData) =>
                 <img
                   key={projectData.id}
+                  onClick={() => {this.props.handleview('showProject', projectData)}}
                   src={projectData.image}
-                  handleview={this.props.handleview}
                   className='home-picture'
-                  onClick={() => {this.props.testme()}}
                 ></img>
               )}
             </div>

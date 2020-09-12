@@ -62,6 +62,7 @@ class App extends Component {
             pageTitle = projectData.title
             projectInfo = {
               id: projectData.id,
+              title: projectData.title,
               image: projectData.image,
               link: projectData.link,
               description: projectData.desription
@@ -77,13 +78,11 @@ class App extends Component {
         view: {
           page: view,
           pageTitle: pageTitle
-        }
+        },
+        projectInfo: projectInfo
       })
   }
 
-  testMe = (x) =>  {
-    console.log('this is working')
-  }
 
 
   render () {
@@ -96,10 +95,15 @@ class App extends Component {
           {
             this.state.view.page === 'about' ? <About />
             :
+            this.state.view.page === 'showProject' ?
+            <Project
+              projectInfo={this.state.projectInfo}
+              handleview={this.handleview}
+            />
+            :
             <Home
               projects={this.state.projects}
-              handleview={this.state.handleview}
-              testme={this.testMe}
+              handleview={this.handleview}
             />
           }
           </div>
