@@ -12,8 +12,8 @@ class Header extends Component  {
             <SocialIcon url='https://www.github.com/ClaytonONeill' className='social-icon' />
           </div>
           <div className='nav-links'>
-            <h1 className='nav-list-item' onClick={() => this.props.handleView('home')}>Home</h1>
-            <h1 className='nav-list-item' onClick={() => this.props.handleView('about')}>About Me</h1>
+            <h1 className='nav-list-item' onClick={() => this.props.handleview('home')}>Home</h1>
+            <h1 className='nav-list-item' onClick={() => this.props.handleview('about')}>About Me</h1>
           </div>
         </div>
       </React.Fragment>

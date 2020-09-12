@@ -37,21 +37,36 @@ class App extends Component {
       },
       {
         id: 4,
-        title: 'Dog Bingo',
-        image: '../pictures/Dog-Bingo.png',
-        link: 'https://stark-hollows-15427.herokuapp.com/',
-        description: 'This was an application idea I\'ve had for a while, and this was a super fun one to build. I utilized Create-React-App, PHP to store uploaded user data, as well as a Third Party API to render the game board with dog names. Implementing game logic to this project was a blast, as well as doing the full design.'
+        title: 'NASA Picture of the Day',
+        image: '../pictures/NASA-Project.png',
+        link: 'https://claytononeill.github.io/NASA-Project/',
+        description: 'This was a quick build application done as part of a code challange between a friend and I where we challanged ourselves to get an app up and running in two hours, utilizing a thrid party API, as well as React. Super fun, and one of my favorite builds.'
       }
     ]
   }
 
-  handleView = (view) =>  {
+  handleview = (view, projectData) =>  {
     let pageTitle = '';
+    let projectInfo = {
+      id : null,
+      image: '',
+      link: '',
+      description: ''
+    }
 
     switch (view) {
         case 'home' :
           pageTitle = 'Home Page'
           break
+        case 'showProject' :
+            pageTitle = projectData.title
+            projectInfo = {
+              id: projectData.id,
+              image: projectData.image,
+              link: projectData.link,
+              description: projectData.desription
+            }
+            break
         case 'about' :
             pageTitle = 'About Me'
             break
@@ -66,17 +81,26 @@ class App extends Component {
       })
   }
 
+  testMe = (x) =>  {
+    console.log('this is working')
+  }
+
 
   render () {
     return (
       <React.Fragment>
         <Header
-          handleView={this.handleView}
+          handleview={this.handleview}
         />
           <div className='app-contain-all'>
           {
             this.state.view.page === 'about' ? <About />
-            : <Home />
+            :
+            <Home
+              projects={this.state.projects}
+              handleview={this.state.handleview}
+              testme={this.testMe}
+            />
           }
           </div>
       </React.Fragment>

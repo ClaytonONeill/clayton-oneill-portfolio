@@ -14,10 +14,15 @@ class Home extends Component {
           </div>
           <div className='home-pictures'>
             <div className='home-picture-contain'>
-              <img src='../pictures/Beer-Cellar.png' className='project-picture'></img>
-              <img src='../pictures/Drink-Finder.png' className='project-picture'></img>
-              <img src='../pictures/NASA-Project.png' className='project-picture'></img>
-              <img src='../pictures/Trippr.png' className='project-picture'></img>
+              {this.props.projects.map((projectData) =>
+                <img
+                  key={projectData.id}
+                  src={projectData.image}
+                  handleview={this.props.handleview}
+                  className='home-picture'
+                  onClick={() => {this.props.testme()}}
+                ></img>
+              )}
             </div>
           </div>
           <div className='contact-information-main'>

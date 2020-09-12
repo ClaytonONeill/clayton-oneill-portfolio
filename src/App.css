@@ -3,12 +3,11 @@
   --header-purple-dark: #651fff;
 }
 
-
 body {
   background-size: auto;
 }
 
-/* HEADER STYLE */
+/* =============== HEADER STYLE  ===============*/
 
 .header-contianer-main {
   padding: 1em;
@@ -18,7 +17,7 @@ body {
   background: black;
 }
 
-/* NAV STYLE */
+/* =============== NAV STYLE =============== */
 
 .social-icon {
   margin-left: 1em;
@@ -51,7 +50,7 @@ body {
   margin: .2em 0 0 2em;
 }
 
-/* APP MAIN STYLE */
+/* =============== APP MAIN STYLE =============== */
 
 .app-contain-all {
   display: flex;
@@ -59,7 +58,7 @@ body {
   flex-wrap: wrap;
 }
 
-/* HOME STYLE */
+/* =============== HOME STYLE =============== */
 
 .home-main-contain {
   margin: 3em auto;
@@ -83,7 +82,7 @@ body {
   margin-top: 3em;
 }
 
-/* HOME PICTURES STYLE */
+/* =============== HOME PICTURES STYLE =============== */
 
 .home-pictures {
   text-align: center;
@@ -101,7 +100,7 @@ body {
   max-width: 45em;
 }
 
-.project-picture {
+.home-picture {
   height: 10em;
   width: 15em;
   margin: 2em auto;
@@ -110,62 +109,18 @@ body {
   transition: .3s;
 }
 
-.project-picture:hover {
+.home-picture:hover {
   box-shadow: -1px 1px 4px lightblue;
-  transform: scale(1.01);
+  transform: scale(1.1);
   cursor: pointer;
 }
 
+/*  =============== PROJECT STYLE  =============== */
 
 
-/* PROJECT STYLE */
-
-.project-contain-all {
-  background: rgba(0, 0, 0, .4);
-  margin: 3em;
-  border: 3px solid white;
-  max-height: 20em;
-  max-width: 15em;
-}
-
-.title-contain {
-  padding: 1em;
-  border-bottom: 1px solid black;
-  color: white;
-}
-
-.project-data-main {
-  border-bottom: .5px solid lightgrey;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 3em;
-}
-
-.project-image {
-  max-height: 10em;
-  width: 10em;
-}
-
-.information-contain {
-  display: none;
-}
-
-.project-description  {
-  width: 100%;
-  padding: 10px 10px 10px 0;
-}
-
-.project-description p {
-  font-size: 1.2em;
-}
-
-.project-link {
-
-}
 
 
-/* ABOUT STYLE */
+/* =============== ABOUT STYLE  =============== */
 
 .about-me {
   padding: 10px;
@@ -177,5 +132,4 @@ body {
 }
 
 
-
-/* MOBILE STLYE */
+/* =============== MOBILE STLYE =============== */
