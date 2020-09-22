@@ -115,7 +115,40 @@ body {
 
 /*  =============== PROJECT STYLE  =============== */
 
+.project-contain-all  {
+  border: 1px solid green;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
 
+#project-back-button  {
+  height: 2em;
+  width: 6em;
+  border-radius: 5px;
+  background: white;
+  margin: 2em 2em;
+}
+
+#project-back-button:hover  {
+  transition: .2s ease-in-out;
+  background: lightblue;
+  cursor: pointer;
+}
+
+.project-info-contain {
+  border: 1px solid red;
+  margin: 5em auto;
+  width: 50%;
+  height: 90%;
+  color: black;
+}
+
+.shown-project-image  {
+  height: 10em;
+  width: 10em;
+}
 
 
 /* =============== ABOUT STYLE  =============== */
