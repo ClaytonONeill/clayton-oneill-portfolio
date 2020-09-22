@@ -19,7 +19,7 @@ class App extends Component {
         title: 'Drink Finder App',
         image: '../pictures/Drink-Finder.png',
         link: 'https://claytononeill.github.io/Drink-Finder-App/',
-        description: 'The user can input full names or search based on the first letter of a cocktail and the application returns ingredients and recipes for each cocktail! I used HTML, CSS, Javascript and jQuery to create a responsive design thats easy to interface with. I used this API "https://www.thecocktaildb.com".'
+        description: 'The user can input full names or search based on the first letter of a cocktail and the application returns ingredients and recipes for each cocktail! I used HTML, CSS, Javascript and jQuery to create a responsive design thats easy to interface with. The API that I used can be found here: "https://www.thecocktaildb.com".'
       },
       {
         id: 2,
@@ -65,7 +65,7 @@ class App extends Component {
               title: projectData.title,
               image: projectData.image,
               link: projectData.link,
-              description: projectData.desription
+              description: projectData.description
             }
             break
         case 'about' :

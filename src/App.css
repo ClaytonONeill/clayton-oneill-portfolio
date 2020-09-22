@@ -138,18 +138,52 @@ body {
 }
 
 .project-info-contain {
-  border: 1px solid red;
   margin: 5em auto;
-  width: 50%;
+  width: 70%;
   height: 90%;
   color: black;
+  padding: 2em;
+  display: flex;
+  justify-content: space-around;
 }
 
 .shown-project-image  {
-  height: 10em;
-  width: 10em;
+  height: 20em;
+  width: 30em;
 }
 
+.project-title-description  {
+  border-right: 1px solid grey;
+  padding: 10px;
+  width: 20em;
+}
+
+.project-title-description p {
+  margin-top: 2em;
+  line-height: 1.7em;
+}
+
+.project-image-link {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-image-link a {
+  text-decoration: none;
+  color: black;
+}
+
+#project-link-button  {
+  width: 12em;
+  border-radius: 5px;
+  margin: 1em auto;
+}
+
+#project-link-button:hover {
+  transition: .2s ease-in-out;
+  background: lightgreen;
+  cursor: pointer;
+}
 
 /* =============== ABOUT STYLE  =============== */
 
