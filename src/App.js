@@ -19,7 +19,7 @@ class App extends Component {
         title: 'Drink Finder App',
         image: '../pictures/Drink-Finder.png',
         link: 'https://claytononeill.github.io/Drink-Finder-App/',
-        description: 'The user can input full names or search based on the first letter of a cocktail and the application returns ingredients and recipes for each cocktail! I used HTML, CSS, Javascript and jQuery to create a responsive design thats easy to interface with. The API that I used can be found here: "https://www.thecocktaildb.com".'
+        description: 'The user can input full names or search based on the first letter of a cocktail and the application returns ingredients and recipes! I used HTML5, CSS3, Javascript and jQuery to create a responsive design thats easy to interface with. The API that I used can be found here: "https://www.thecocktaildb.com".'
       },
       {
         id: 2,
@@ -33,14 +33,14 @@ class App extends Component {
         title: 'Trippr',
         image: '../pictures/Trippr.png',
         link: 'https://tripprga.herokuapp.com',
-        description: 'This was the first group build that I worked on. A blog site about travel locations, what they were like, and the ability to like others posts. Another Full Stack build that utilized the MEAN Stack, user authentication and password encryption using Bcrypt. Our group managed the project duties with Trello, and held stand meetings every morning and afternoon.'
+        description: 'This was the first group build that I worked on. A blog site about travel locations, what they were like, and the ability to like others posts. Another Full Stack build that utilized the MEAN Stack, including user authentication and password encryption using Bcrypt. Our group managed the project duties with Trello, and held stand meetings every morning and afternoon.'
       },
       {
         id: 4,
         title: 'NASA Picture of the Day',
         image: '../pictures/NASA-Project.png',
         link: 'https://claytononeill.github.io/NASA-Project/',
-        description: 'This was a quick build application done as part of a code challange between a friend and I where we challanged ourselves to get an app up and running in two hours, utilizing a thrid party API, as well as React. Super fun, and one of my favorite builds.'
+        description: 'This was a quick build application done as part of a code challange between a friend and I where we pushed ourselves to get an app up and running in two hours, utilizing a thrid party API, as well as React. Super fun, and one of my favorite builds.'
       }
     ]
   }
