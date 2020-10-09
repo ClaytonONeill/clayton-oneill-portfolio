@@ -6,20 +6,15 @@ class Project extends Component {
     return (
       <React.Fragment>
         <div className='project-contain-all'>
-          <div className='title-contain'>
-            <h1 className='project-title'>{this.props.projects.title}</h1>
-          </div>
-          <div className='project-data-main'>
-            <div className='title-image'>
-              <img src={this.props.projects.image} className='project-image'></img>
+          <button onClick={() => {this.props.handleview('home')}} id='project-back-button'>Go Back</button>
+          <div className='project-info-contain'>
+            <div className='project-title-description'>
+              <h1>{this.props.projectInfo.title}</h1>
+              <p>{this.props.projectInfo.description}</p>
             </div>
-            <div className='information-contain'>
-              <div className='project-description'>
-                <p>{this.props.projects.description}</p>
-              </div>
-              <div className='project-link'>
-                <a href={this.props.projects.link}><button type="button" className="btn btn-outline-secondary">Take me to the site!</button></a>
-              </div>
+            <div className='project-image-link'>
+              <img src={this.props.projectInfo.image} className='shown-project-image'></img>
+              <button id='project-link-button'><a href={this.props.projectInfo.link}>Take me to the site!</a></button>
             </div>
           </div>
         </div>
