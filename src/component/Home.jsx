@@ -7,18 +7,24 @@ class Home extends Component {
         <div className='home-main-contain'>
           <div className='welcome'>
             <h1>Welcome.</h1>
-            <h3>This is a portfolio website created by Clayton O'Neill.</h3>
+            <h3>This is the portfolio for Clayton O'Neill.</h3>
+            <h4>Check out some projects I've worked on!</h4>
+            <h5>Thanks for visiting :)</h5>
+            <a href='../../files/Clayton-Resume.pdf' download id='resume'>Download my resumé here!</a>
           </div>
-          <div className='about-me'>
-            <image src='#' id='about-me-image'></image>
-            <h2 id='about-me-title'>About Me</h2>
-            <p>sdfjdfs ajsdfl asjklasdjfjlkasjf asldjfj fsa sdfjdfs
-            aksjdas lajdldj alksdj aljdlasdj aljsd
-            ajsd lajd asjdi dj ei awjdiawjj waahsdkja dkasd ahds
-            ashdjakdh iwhdahdkajsd
-            ahsdj
-            has djhasdwawdhw8
-            aidh awd</p>
+          <div className='home-pictures'>
+            <div className='home-picture-contain'>
+              {this.props.projects.map((projectData) =>
+                <img
+                  key={projectData.id}
+                  onClick={() => {this.props.handleview('showProject', projectData)}}
+                  src={projectData.image}
+                  className='home-picture'
+                ></img>
+              )}
+            </div>
+          </div>
+          <div className='contact-information-main'>
           </div>
         </div>
       </React.Fragment>
