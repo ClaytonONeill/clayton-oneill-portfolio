@@ -1,3 +1,5 @@
+Link to the live site: https://claytononeill.github.io/clayton-oneill-portfolio/.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
