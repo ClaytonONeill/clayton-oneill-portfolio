@@ -7,7 +7,7 @@ class About extends Component {
       <React.Fragment>
         <div className='about-me'>
             <div className='about-me-image'>
-              <img src='../../pictures/clayton-oneill-outside-image.jpg' id="about-me-image"></img>
+              <img src='././pictures/clayton-oneill-outside-image.jpg' id="about-me-image"></img>
             </div>
             <div className='about-me-info-contain'>
               <div className='about-p'>
@@ -17,7 +17,7 @@ class About extends Component {
                  far and am excited to keep expanding upon that knowledge.</p>
 
                  <p>I love animals, craft beer, the game Super Smash Bros Melee,
-                 and of course software devlopment. I have a dog named <a href='../../pictures/Lemon-Drop.jpeg' download>Lemon</a> who is a monster, and I hope you enjoy this picture of her!</p>
+                 and of course software devlopment. I have a dog named <a href='././pictures/Lemon-Drop.jpeg' download>Lemon</a> who is a monster, and I hope you enjoy this picture of her!</p>
 
               </div>
               <div className='about-skills'>

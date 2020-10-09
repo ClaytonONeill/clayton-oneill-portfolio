@@ -16,28 +16,28 @@ class App extends Component {
       {
         id: 1,
         title: 'Drink Finder App',
-        image: '../pictures/Drink-Finder.png',
+        image: './pictures/Drink-Finder.png',
         link: 'https://claytononeill.github.io/Drink-Finder-App/',
-        description: 'The user can input full names or search based on the first letter of a cocktail and the application returns ingredients and recipes! I used HTML5, CSS3, Javascript and jQuery to create a responsive design thats easy to interface with.' 
+        description: 'The user can input full names or search based on the first letter of a cocktail and the application returns ingredients and recipes! I used HTML5, CSS3, Javascript and jQuery to create a responsive design thats easy to interface with.'
       },
       {
         id: 2,
         title: 'The Beer Cellar',
-        image: '../pictures/Beer-Cellar.png',
+        image: './pictures/Beer-Cellar.png',
         link: 'https://morning-journey-64624.herokuapp.com/',
         description: 'An application for users to upload and describe new beers that they have tried. Users can log in and see what new brews their friends have been drinking. This application was my first full stack build using Node.js, Mongoose, Express, and EJS. It adheres to to the MVC structure and has full CRUD capacity. As well as user authentication with log-in & sign-up.'
       },
       {
         id: 3,
         title: 'Trippr',
-        image: '../pictures/Trippr.png',
+        image: './pictures/Trippr.png',
         link: 'https://tripprga.herokuapp.com',
         description: 'This was the first group build that I worked on. A blog site about travel locations, what they were like, and the ability to like others posts. Another Full Stack build that utilized the MEAN Stack, including user authentication and password encryption using Bcrypt. Our group managed the project duties with Trello, and held stand meetings every morning and afternoon.'
       },
       {
         id: 4,
         title: 'NASA Picture of the Day',
-        image: '../pictures/NASA-Project.png',
+        image: './pictures/NASA-Project.png',
         link: 'https://claytononeill.github.io/NASA-Project/',
         description: 'This was a quick build done as part of a coding challange between a friend and I where we pushed ourselves to get an app up and running in two hours, utilizing a thrid party API, as well as React. Super fun, and one of my favorite builds.'
       }

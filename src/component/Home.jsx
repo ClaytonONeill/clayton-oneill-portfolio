@@ -10,7 +10,7 @@ class Home extends Component {
             <h3>This is the portfolio for Clayton O'Neill.</h3>
             <h4>Check out some projects I've worked on!</h4>
             <h5>Thanks for visiting :)</h5>
-            <a href='../../files/Clayton-Resume.pdf' download id='resume'>Download my resumé here!</a>
+            <a href='././files/Clayton-Resume.pdf' download id='resume'>Download my resumé here!</a>
           </div>
           <div className='home-pictures'>
             <div className='home-picture-contain'>
