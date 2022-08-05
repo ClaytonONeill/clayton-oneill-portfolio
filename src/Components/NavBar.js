@@ -11,7 +11,7 @@ import { VscAccount } from "react-icons/vsc";
 const NavBar = () => {
   return (
     <>
-      <Navbar bg="light" variant="light">
+      <Navbar bg="dark" variant="dark">
         <Container fluid>
           <Navbar.Brand as={Link} to="/">
             <VscAccount size={45} />
