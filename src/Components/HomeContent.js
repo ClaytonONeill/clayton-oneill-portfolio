@@ -11,7 +11,7 @@ import { AiFillGithub } from "react-icons/ai";
 
 const HomeContent = () => {
   return (
-    <Container className="test">
+    <Container className="home-main-container">
       <Row>
         <Col md={6}>
           <div className="home-image-container">
@@ -23,7 +23,7 @@ const HomeContent = () => {
             <div className="home-text">This is text</div>
             <div className="home-button-container">
               <div className="resume-container">
-                <Button>Get Resume</Button>
+                <Button>Download Resum&#232;</Button>
               </div>
               <div className="social-button-container">
                 <div className="social-icon">

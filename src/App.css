@@ -1,6 +1,8 @@
-.test {
+/* ==================================================================== Home Style */
+.home-main-container {
   border: 1px solid red;
   text-align: center;
+  margin-top: 5em;
 }
 
 .home-content-container {
@@ -51,4 +53,43 @@
 
 .social-icon {
   margin-right: 20px;
+}
+
+/* ==================================================================== Projects Style */
+.projects-main-container {
+  border: 1px solid red;
+  width: 100%;
+  padding: 1em;
+}
+
+.public-facing-disclaimer {
+  color: rgba(0, 0, 0, 0.7);
+  font-style: italic;
+}
+
+/* ==================================================================== Mobile Style Rules */
+@media (max-width: 400px) {
+  .home-main-container {
+    border: 1px solid red;
+    text-align: center;
+    margin-top: 0;
+  }
+
+  .home-button-container {
+    border: 1px solid pink;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px 0;
+    padding: 15px;
+    width: 100%;
+  }
+
+  .social-button-container {
+    width: 50%;
+    display: inline-flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding-top: 12px;
+  }
 }
