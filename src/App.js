@@ -3,7 +3,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { ErrorBoundary } from "react-error-boundary";
 
-//Styles:
+//CSS:
 import "./App.css";
 
 //Components:
@@ -16,15 +16,17 @@ const App = () => {
   return (
     <div className="App">
       <NavBar />
-      <Router>
-        <ErrorBoundary FallBackComponent={Home}>
-          <Routes>
-            <Route exact path="/" element={<Home />} />
-            <Route path="/Projects" element={<Projects />} />
-            <Route path="/About" element={<About />} />
-          </Routes>
-        </ErrorBoundary>
-      </Router>
+      <div className="app-routes-container">
+        <Router>
+          <ErrorBoundary FallBackComponent={Home}>
+            <Routes>
+              <Route exact path="/" element={<Home />} />
+              <Route path="/Projects" element={<Projects />} />
+              <Route path="/About" element={<About />} />
+            </Routes>
+          </ErrorBoundary>
+        </Router>
+      </div>
     </div>
   );
 };

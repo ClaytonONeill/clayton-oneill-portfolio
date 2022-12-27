@@ -1,13 +1,20 @@
 export default [
   {
-    title: "",
+    id: 1,
+    title: "Title 1",
     imageLink: "",
-    description: "",
-    technologies: [],
+    description: "This is the description for project 1",
+    technologies: [
+      { type: "react" },
+      { type: "MUI" },
+      { type: "MySQL" },
+      { type: ".NET" },
+    ],
     publicFacing: false,
   },
   {
-    title: "",
+    id: 2,
+    title: "Title 2",
     imageLink: "",
     description: "",
     technologies: [],
@@ -15,14 +22,16 @@ export default [
     siteLink: "",
   },
   {
-    title: "",
+    id: 3,
+    title: "Title 3",
     imageLink: "",
     description: "",
     technologies: [],
     publicFacing: false,
   },
   {
-    title: "",
+    id: 4,
+    title: "Title 4",
     imageLink: "",
     description: "",
     technologies: [],

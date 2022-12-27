@@ -1,3 +1,18 @@
+/* App Style */
+.app-routes-container {
+  margin: 1em;
+}
+
+/* Navigation Style */
 .resume-download {
   text-decoration: none;
+}
+
+/* Home Style */
+
+/* Project Page Style */
+
+/* Project Card Style */
+.project-card-container {
+  margin: 1.5em 0;
 }
