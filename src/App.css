@@ -1,6 +1,9 @@
 /* App Style */
-.app-routes-container {
-  margin: 1em;
+body {
+  background: url("../public/Images/background.png") no-repeat center center
+    fixed;
+  background-size: cover;
+  height: 100vh;
 }
 
 /* Navigation Style */
@@ -9,6 +12,19 @@
 }
 
 /* Home Style */
+.home-div {
+  margin: 12em auto;
+  width: 50%;
+  color: white;
+  text-align: center;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+@media (max-width: 400px) {
+  .home-div {
+    width: 80%;
+  }
+}
 
 /* Project Page Style */
 

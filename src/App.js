@@ -16,17 +16,15 @@ const App = () => {
   return (
     <div className="App">
       <NavBar />
-      <div className="app-routes-container">
-        <Router>
-          <ErrorBoundary FallBackComponent={Home}>
-            <Routes>
-              <Route exact path="/" element={<Home />} />
-              <Route path="/Projects" element={<Projects />} />
-              <Route path="/About" element={<About />} />
-            </Routes>
-          </ErrorBoundary>
-        </Router>
-      </div>
+      <Router>
+        <ErrorBoundary FallBackComponent={Home}>
+          <Routes>
+            <Route exact path="/" element={<Home />} />
+            <Route path="/Projects" element={<Projects />} />
+            <Route path="/About" element={<About />} />
+          </Routes>
+        </ErrorBoundary>
+      </Router>
     </div>
   );
 };

@@ -10,7 +10,7 @@ import Button from "react-bootstrap/Button";
 const NavBar = () => {
   return (
     <>
-      <Navbar bg="light" variant="light" expand="lg">
+      <Navbar bg="dark" variant="dark" expand="lg" sticky="top">
         <Container className="nav-container">
           <Navbar.Brand href="/">Clayton O'Neill Portfolio</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -20,13 +20,12 @@ const NavBar = () => {
               <Nav.Link href="/Projects">Projects</Nav.Link>
               <Nav.Link href="/About">About</Nav.Link>
             </Nav>
-
             <a
               download
               href="../../Clayton_ONeill_Resume_2022.pdf"
               className="resume-download"
             >
-              <Button variant="outline-primary">Download Resume</Button>
+              <Button variant="outline-light">Download Resume</Button>
             </a>
           </Navbar.Collapse>
         </Container>
