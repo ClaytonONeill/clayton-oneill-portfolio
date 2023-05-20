@@ -13,16 +13,25 @@ import projectConfig from "../config/projectConfig";
 const Projects = () => {
   return (
     <>
-      <Container>
-        <h1>This is where the projects will live.</h1>
+      <Container className="all-projects-container">
         {projectConfig.map(
-          ({ id, title, imageLink, description, technologies }) => (
+          ({
+            id,
+            title,
+            imageLink,
+            description,
+            technologies,
+            publicFacing,
+            siteUrl,
+          }) => (
             <Project
               key={id}
               title={title}
               imageLink={imageLink}
               description={description}
               technologies={technologies}
+              publicFacing={publicFacing}
+              siteUrl={siteUrl}
             />
           )
         )}

@@ -12,7 +12,7 @@ const Home = () => {
     <>
       <div className="home-div">
         <h1>Hello! My name is Clay and I am a full stack web developer.</h1>
-        <p>This is the little footer</p>
+        <small>Thanks for checking out my portfolio.</small>
       </div>
     </>
   );

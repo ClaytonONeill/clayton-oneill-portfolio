@@ -22,7 +22,7 @@ const NavBar = () => {
             </Nav>
             <a
               download
-              href="../../Clayton_ONeill_Resume_2022.pdf"
+              href="../../Clayton_ONeill_Resume_2023.pdf"
               className="resume-download"
             >
               <Button variant="outline-light">Download Resume</Button>

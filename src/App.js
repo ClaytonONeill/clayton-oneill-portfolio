@@ -11,6 +11,7 @@ import NavBar from "./Components/NavBar";
 import Home from "./Components/Home";
 import Projects from "./Components/Projects";
 import About from "./Components/About";
+import Footer from "./Components/Footer";
 
 const App = () => {
   return (
@@ -25,6 +26,7 @@ const App = () => {
           </Routes>
         </ErrorBoundary>
       </Router>
+      <Footer />
     </div>
   );
 };
